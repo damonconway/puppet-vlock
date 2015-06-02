@@ -3,10 +3,6 @@
 # Default parameters for the vlock module.
 #
 # Variables:
-#   $auto_update:
-#       Determines if vlock package should be kept up to date.
-#       Boolean value (Default: false)
-#
 #   $ensure:
 #       Determines if vlock package should be installed.
 #       Boolean value (Default: true)
@@ -25,8 +21,7 @@
 #
 class vlock::params {
  
-  $auto_update = false
-  $ensure      = true
+  $ensure = 'present'
 
   case $::osfamily {
     'RedHat': {
