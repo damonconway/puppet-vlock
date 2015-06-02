@@ -3,17 +3,13 @@
 # This module managed the vlock package. Currently, only RedHat family distrobutions are supported.
 #
 # Parameters:
-#   $auto_update:
-#       Determines if vlock package should be kept up to date.
-#       Type: Boolean (Default: false)
-#
 #   $ensure:
-#       Determines if vlock package should be installed.
-#       Type: Boolean (Default: true)
+#       String to pass to vlock package resource.
+#       Type: String (Default: 'present')
 #
 #   $pkg_name
 #       Name of the package to install
-#       Type: String (Default: OS default)
+#       Type: String (Default: OS specific package name)
 #
 # Actions:
 #   Actions should be described here

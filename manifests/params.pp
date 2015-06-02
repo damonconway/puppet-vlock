@@ -4,18 +4,18 @@
 #
 # Variables:
 #   $ensure:
-#       Determines if vlock package should be installed.
-#       Boolean value (Default: true)
+#       String to pass to vlock package resource.
+#       Type: String (Default: present)
 #
 #   $pkg_name
 #       Name of the package to install
-#       Type: String (Default: OS default)
+#       Type: String (Default: OS specific package name)
 #
 # Actions:
 #   Actions should be described here
 #
 # Requires:
-#   - Package["foopackage"]
+#   - puppetlabs-stdlib
 #
 # Sample Usage:
 #
