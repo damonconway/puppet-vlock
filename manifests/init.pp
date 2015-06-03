@@ -25,12 +25,12 @@
 class vlock (
   $ensure   = $vlock::params::ensure,
   $pkg_name = $vlock::params::pkg_name,
-) {
+) inherits vlock::params {
 
   validate_string($ensure)
   validate_string($pkg_name)
 
-  package { "$pkg_name":
+  package { $pkg_name:
     ensure => $ensure,
   }
 
