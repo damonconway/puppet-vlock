@@ -11,9 +11,6 @@
 #       Name of the package to install
 #       Type: String (Default: OS specific package name)
 #
-# Actions:
-#   Actions should be described here
-#
 # Requires:
 #   - puppetlabs-stdlib
 #
@@ -22,7 +19,7 @@
 #   - include ::vlock
 #
 #   - class { 'vlock':
-#       auto_update = true
+#       ensure = 'latest'
 #     }
 #
 class vlock (
