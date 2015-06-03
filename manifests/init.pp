@@ -34,7 +34,7 @@ class vlock (
   validate_string($pkg_name)
 
   package { $pkg_name:
-    ensure => $ensure_pkg,
+    ensure => $ensure,
   }
 
 }
