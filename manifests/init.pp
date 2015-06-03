@@ -23,8 +23,8 @@
 #     }
 #
 class vlock (
-  $ensure   = $::vlock::params::ensure,
-  $pkg_name = $::vlock::params::pkg_name,
+  $ensure   = $vlock::params::ensure,
+  $pkg_name = $vlock::params::pkg_name,
 ) {
 
   validate_string($ensure)
